@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Libro(autor, titulo, cantPainas){
+            this.autor = autor;
+            this.titulo = titulo;
+            this.cantPainas = cantPainas;
+            this.mostrar = function(){
+            }
+
+        }
+
+        let libro1 = new Libro("Lionel Messi", "PSG", 12);
+        //nuevo metodo para libro
+
+        Libro.abrirLibro = function(){
+            alert(this.titulo + 'ha sido abierto')
+        }
+    </script>
+</body>
+</html>
